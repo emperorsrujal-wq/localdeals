@@ -2,6 +2,11 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
 import { getConfig } from './config/env';
+import { AuthModule } from './modules/auth/auth.module';
+import { UsersModule } from './modules/users/users.module';
+import { BusinessesModule } from './modules/businesses/businesses.module';
+import { FlyersModule } from './modules/flyers/flyers.module';
+import { AdminModule } from './modules/admin/admin.module';
 
 @Module({
   imports: [
@@ -21,12 +26,11 @@ import { getConfig } from './config/env';
       synchronize: true, // Set to false in production
       logging: true,
     }),
-    // TODO: Add feature modules here
-    // AuthModule,
-    // UsersModule,
-    // BusinessesModule,
-    // FlyersModule,
-    // AdminModule,
+    AuthModule,
+    UsersModule,
+    BusinessesModule,
+    FlyersModule,
+    AdminModule,
   ],
   controllers: [],
   providers: [],
