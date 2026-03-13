@@ -1,0 +1,32 @@
+# Xcode
+*.pbxproj
+*.pbxuser
+*.perspectivev3
+*.xcworkspace
+xcuserdata/
+DerivedData/
+.build/
+build/
+
+# Swift
+.swiftpm/
+.DS_Store
+*.playground
+*.swiftdeps
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.env.local
+Config.xcconfig
+GoogleService-Info.plist
