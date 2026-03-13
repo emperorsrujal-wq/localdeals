@@ -1,0 +1,32 @@
+# Gradle
+.gradle/
+build/
+*.apk
+*.aab
+*.jks
+*.keystore
+
+# Android Studio
+.idea/
+*.iml
+.DS_Store
+local.properties
+/captures
+.externalNativeBuild
+.cxx/
+
+# Kotlin
+*.log
+.kotlin/
+
+# Environment
+.env
+.env.local
+local.properties
+gradle.properties
+
+# IDE
+.vscode/
+*.swp
+*.swo
+*~
