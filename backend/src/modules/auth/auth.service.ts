@@ -1,17 +1,20 @@
 import { Injectable } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
-import * as admin from 'firebase-admin';
+import { FirebaseService } from '../../firebase/firebase.service';
 
 @Injectable()
 export class AuthService {
-  constructor(private jwtService: JwtService) {}
+  constructor(
+    private jwtService: JwtService,
+    private firebaseService: FirebaseService,
+  ) {}
 
   /**
    * Verify Firebase token and create JWT session
    */
   async verifyFirebaseToken(firebaseToken: string) {
     try {
-      const decodedToken = await admin.auth().verifyIdToken(firebaseToken);
+      const decodedToken = await this.firebaseService.verifyIdToken(firebaseToken);
       const userId = decodedToken.uid;
       const email = decodedToken.email;
 

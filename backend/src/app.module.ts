@@ -7,6 +7,7 @@ import { UsersModule } from './modules/users/users.module';
 import { BusinessesModule } from './modules/businesses/businesses.module';
 import { FlyersModule } from './modules/flyers/flyers.module';
 import { AdminModule } from './modules/admin/admin.module';
+import { FirebaseModule } from './firebase/firebase.module';
 
 @Module({
   imports: [
@@ -26,6 +27,7 @@ import { AdminModule } from './modules/admin/admin.module';
       synchronize: true, // Set to false in production
       logging: true,
     }),
+    FirebaseModule,
     AuthModule,
     UsersModule,
     BusinessesModule,

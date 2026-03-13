@@ -1,0 +1,38 @@
+# Firebase
+firebase-admin-key.json
+firebase-admin-key-*.json
+
+# iOS
+GoogleService-Info.plist
+
+# Android
+google-services.json
+
+# Dependencies
+node_modules/
+dist/
+build/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cache
+.cache/
+.eslintcache

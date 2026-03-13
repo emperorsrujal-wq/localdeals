@@ -5,9 +5,11 @@ import { AuthService } from './auth.service';
 import { AuthController } from './auth.controller';
 import { JwtStrategy } from './jwt.strategy';
 import { getConfig } from '../../config/env';
+import { FirebaseModule } from '../../firebase/firebase.module';
 
 @Module({
   imports: [
+    FirebaseModule,
     PassportModule,
     JwtModule.register({
       secret: getConfig().jwt.secret,
