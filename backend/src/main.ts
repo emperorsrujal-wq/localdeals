@@ -22,9 +22,12 @@ async function bootstrap() {
     }),
   );
 
+  // Use PORT from environment (Cloud Run sets PORT=8080) or fall back to config
+  const port = process.env.PORT ? parseInt(process.env.PORT, 10) : config.port;
+
   // Start server
-  await app.listen(config.port, () => {
-    console.log(`LocalDeals API running on port ${config.port} [${config.nodeEnv}]`);
+  await app.listen(port, '0.0.0.0', () => {
+    console.log(`✅ LocalDeals API running on port ${port} [${config.nodeEnv}]`);
   });
 }
 
