@@ -1,0 +1,96 @@
+# Environment & Config
+.env
+.env.local
+.env.*.local
+.DS_Store
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.iml
+
+# iOS
+apps/business-app-ios/build/
+apps/business-app-ios/.build/
+apps/business-app-ios/DerivedData/
+apps/business-app-ios/**/*.pbxuser
+apps/business-app-ios/**/*.perspectivev3
+apps/business-app-ios/**/*.xcworkspace/xcuserdata/
+apps/business-app-ios/**/*.playground
+apps/business-app-ios/.swiftpm/
+
+apps/consumer-app-ios/build/
+apps/consumer-app-ios/.build/
+apps/consumer-app-ios/DerivedData/
+apps/consumer-app-ios/**/*.pbxuser
+apps/consumer-app-ios/**/*.perspectivev3
+apps/consumer-app-ios/**/*.xcworkspace/xcuserdata/
+apps/consumer-app-ios/**/*.playground
+apps/consumer-app-ios/.swiftpm/
+
+# Android
+apps/business-app-android/.gradle/
+apps/business-app-android/build/
+apps/business-app-android/local.properties
+apps/business-app-android/.DS_Store
+apps/business-app-android/**/.DS_Store
+apps/business-app-android/**/*.jks
+apps/business-app-android/**/*.keystore
+apps/business-app-android/.cxx/
+
+apps/consumer-app-android/.gradle/
+apps/consumer-app-android/build/
+apps/consumer-app-android/local.properties
+apps/consumer-app-android/.DS_Store
+apps/consumer-app-android/**/.DS_Store
+apps/consumer-app-android/**/*.jks
+apps/consumer-app-android/**/*.keystore
+apps/consumer-app-android/.cxx/
+
+# Node & Backend
+node_modules/
+dist/
+build/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.eslintcache
+.next/
+out/
+.cache/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+
+# Backend
+backend/node_modules/
+backend/dist/
+backend/.env
+backend/.env.local
+backend/uploads/
+backend/logs/
+
+# Admin Dashboard
+apps/admin-dashboard/.next/
+apps/admin-dashboard/out/
+apps/admin-dashboard/node_modules/
+apps/admin-dashboard/.env.local
+apps/admin-dashboard/public/uploads/
+
+# Misc
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+.git/
+prd_extracted/
+extract_prd.js
+extract_docx.js
