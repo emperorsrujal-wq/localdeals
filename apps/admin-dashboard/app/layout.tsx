@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   description: 'Manage the LocalDeals platform',
 };
 
+import { Sidebar } from '../components/common/Sidebar';
+
 export default function RootLayout({
   children,
 }: {
@@ -13,8 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-gray-50">
-        {children}
+      <body className="bg-gray-50 flex h-screen overflow-hidden">
+        <Sidebar />
+        <main className="flex-1 flex flex-col h-screen overflow-hidden">
+          {children}
+        </main>
       </body>
     </html>
   );
